@@ -1,0 +1,8 @@
+.intro {
+  position: relative;
+  padding: 20vh var(--horizontal-gutter);
+  min-height: 200px;
+  background: rgb(245, 245, 245) url(/images/assets/grid.svg);
+  background-attachment: fixed;
+  overflow: hidden;
+}

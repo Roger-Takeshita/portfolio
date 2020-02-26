@@ -1,0 +1,47 @@
+{
+  "name": "roger-takeshita.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://roger-takeshita.github.io",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
+    "css-scroll-snap-polyfill": "^0.1.2",
+    "js-cookie": "^2.2.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0",
+    "react-scrollspy": "^3.4.2",
+    "react-spring": "^8.0.27",
+    "react-swipe": "^6.0.4",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swipe-js-iso": "^2.1.5",
+    "ua-parser-js": "^0.7.21"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

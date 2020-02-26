@@ -1,0 +1,144 @@
+.App {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.my-header {
+  display: flex;
+  flex-grow: 1;
+}
+
+.my-main {
+  padding-top: 100px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+header > nav {
+  flex-grow: 1;
+  background-color: none;
+}
+
+div .navbar-nav {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+#basic-navbar-nav > div {
+  flex-grow: 1;
+}
+
+#basic-navbar-nav > div > div > a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 10px;
+}
+
+#basic-navbar-nav > div > div > a:hover {
+  color: rgb(0, 128, 255);
+  text-decoration: none;
+}
+
+#basic-navbar-nav > div > div > a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 85%;
+  background-color: rgb(93, 174, 255, 0.3);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 190ms;
+}
+
+#basic-navbar-nav > div > div > a:hover::before {
+  width: 85%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  display: -webkit-flex;
+  height: 50px;
+  width: 200px;
+  margin: 10px 0;
+  border: 1px dashed black;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Damion', sans-serif;
+}
+
+/* .logo {
+  text-decoration: none;
+  color: black;
+  position: fixed;
+}
+
+nav {
+  float: right;
+  position: fixed;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 25px;
+  padding-top: 25px;
+  position: relative;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+nav > ul > li > a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav > ul > li > a:hover {
+  color: rgb(0, 128, 255);
+  text-decoration: none;
+}
+
+nav > ul > li > a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(0, 128, 255);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 190ms;
+}
+
+nav > ul > li > a:hover::before {
+  width: 100%;
+}
+
+.main-padding {
+  padding-top: 60px;
+} */
