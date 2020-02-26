@@ -2,9 +2,9 @@ import React from 'react';
 
 const Projects = (props) => {
     return (
-        <div>
+        <section className="section-projects container" id="menu-projects">
             <h1>Projects</h1>
-        </div>
+        </section>
     );
 }
 

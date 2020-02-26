@@ -2,9 +2,9 @@ import React from 'react';
 
 const AboutMe = (props) => {
     return (
-        <div>
+        <section className="section-about-me container" id="menu-about-me">
             <h1>AboutMe</h1>
-        </div>
+        </section>
     );
 }
 

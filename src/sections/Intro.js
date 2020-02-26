@@ -2,7 +2,7 @@ import React from 'react';
 
 const Intro = (props) => {
     return (
-        <section>
+        <section className="section-intro" id="menu-intro">
             Intro
         </section>
     );

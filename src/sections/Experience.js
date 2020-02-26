@@ -2,9 +2,9 @@ import React from 'react';
 
 const Experience = (props) => {
     return (
-        <div>
+        <section className="section-experience container" id="menu-experience">
             <h1>Experience</h1>
-        </div>
+        </section>
     );
 }
 

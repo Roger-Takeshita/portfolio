@@ -2,9 +2,9 @@ import React from 'react';
 
 const Skills = (props) => {
     return (
-        <div>
+        <section className="section-skills container" id="menu-skills">
             <h1>Skills</h1>
-        </div>
+        </section>
     );
 }
 
