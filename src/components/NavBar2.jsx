@@ -33,18 +33,16 @@ const NavBar2 = (props) => {
 
     return (
         <Navbar bg="none" expand="lg" fixed="top">
-            <Navbar.Brand href="#home"><animated.div className="logo" style={effect}>Roger Takeshita</animated.div></Navbar.Brand>
+            {/* <Navbar.Brand href="#home"><animated.div className="logo" style={effect}>Roger Takeshita</animated.div></Navbar.Brand> */}
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <animated.div style={effectMenu}>
                     <Nav className="mr-auto">
-                        <Scrollspy className="scrollspy-menu" items={['menu-intro', 'menu-about-me', 'menu-skills', 'menu-projects', 'menu-experience', 'menu-side-projects', 'menu-resume', 'menu-contact-me']} currentClassName="menu-now">
-                            <li><Nav.Link href="#menu-intro">Home</Nav.Link></li>
+                        <Scrollspy className="scrollspy-menu" items={['menu-about-me', 'menu-skills', 'menu-projects', 'menu-experience', 'menu-resume', 'menu-contact-me']} currentClassName="menu-now">
                             <li><Nav.Link href="#menu-about-me">About Me</Nav.Link></li>
                             <li><Nav.Link href="#menu-skills">Skills</Nav.Link></li>
                             <li><Nav.Link href="#menu-projects">Projects</Nav.Link></li>
                             <li><Nav.Link href="#menu-experience">Experience</Nav.Link></li>
-                            <li><Nav.Link href="#menu-side-projects">Side Projects</Nav.Link></li>
                             <li><Nav.Link href="#menu-resume">Resume</Nav.Link></li>
                             <li><Nav.Link href="#menu-contact-me">Contact Me</Nav.Link></li>
                         </Scrollspy>
