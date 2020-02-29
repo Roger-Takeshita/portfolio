@@ -1,5 +1,4 @@
 import React from 'react';
-import { isCompositeComponent } from 'react-dom/test-utils';
 
 export const projectsData = [
     {
@@ -18,6 +17,7 @@ export const projectsData = [
             'devicon-mongodb-plain-wordmark colored',
             'devicon-heroku-original-wordmark colored'
         ],
+        internalTechnologies: [],
         description: "MERN stack expenses tracker app built with:",
 
     },
@@ -36,6 +36,7 @@ export const projectsData = [
             'devicon-django-plain-wordmark colored',
             'devicon-heroku-original-wordmark colored'
         ],
+        internalTechnologies: [],
         description: "Full-Stack book store application built with:",
     },
     {
@@ -54,6 +55,9 @@ export const projectsData = [
             'devicon-mongodb-plain-wordmark colored',
             'devicon-heroku-original-wordmark colored'
         ],
+        internalTechnologies: [
+            '/images/logos/technology_socketio.png'
+        ],
         description: "Full-Stack social media application built with:",
     },
     {
@@ -68,6 +72,7 @@ export const projectsData = [
             'devicon-jquery-plain-wordmark colored',
             'devicon-github-plain-wordmark colored'
         ],
+        internalTechnologies: [],
         description: "Single Page Application (SPA) built with:",
     }
 ]

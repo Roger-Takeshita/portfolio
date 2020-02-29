@@ -5,7 +5,7 @@ const Skills = (props) => {
     return (
         <div className="section-skills container" id="menu-skills">
             <div className="skills">
-                <h3>Skills</h3>
+                <p>SKILLS</p>
                 <div className="languages">
                     {languagesData.map((language, idx) => {
                         return (

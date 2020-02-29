@@ -38,12 +38,12 @@ const NavBar2 = (props) => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <animated.div style={effectMenu}>
                     <Nav className="mr-auto">
-                        <Scrollspy className="scrollspy-menu" items={['menu-about-me', 'menu-skills', 'menu-projects', 'menu-experience', 'menu-resume', 'menu-contact-me']} currentClassName="menu-now">
+                        <Scrollspy className="scrollspy-menu" items={['menu-about-me', 'menu-skills', 'menu-projects', 'menu-experience', 'menu-education', 'menu-contact-me']} currentClassName="menu-now">
                             <li><Nav.Link href="#menu-about-me">About Me</Nav.Link></li>
                             <li><Nav.Link href="#menu-skills">Skills</Nav.Link></li>
                             <li><Nav.Link href="#menu-projects">Projects</Nav.Link></li>
                             <li><Nav.Link href="#menu-experience">Experience</Nav.Link></li>
-                            <li><Nav.Link href="#menu-resume">Resume</Nav.Link></li>
+                            <li><Nav.Link href="#menu-education">Education</Nav.Link></li>
                             <li><Nav.Link href="#menu-contact-me">Contact Me</Nav.Link></li>
                         </Scrollspy>
                     </Nav>

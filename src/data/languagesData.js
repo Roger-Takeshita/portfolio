@@ -58,15 +58,11 @@ export const languagesData = [
         icon: <i className="devicon-heroku-original colored language-icon"/>
     },
     {
-        name: "AWS",
+        name: "AWS S3",
         icon: <i className="devicon-amazonwebservices-original colored language-icon"/>
     },
     {
         name: "Photoshop",
         icon: <i className="devicon-photoshop-plain colored language-icon"/>
-    },
-    {
-        name: "VSCode",
-        icon: <i className="devicon-visualstudio-plain colored language-icon"/>
-    },
+    }
 ]

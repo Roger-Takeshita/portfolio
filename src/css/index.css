@@ -6,24 +6,21 @@
 
 :root {
   --ff-primary: 'Work Sans', sans-serif;
-  --fw-regular: 400;
-  --fw-bold: 700;
+  --fw: 700;
   --ts: 18px;
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.30rem;
   --fs-h3: 1.15rem;
+  --fs-h4: 0.90rem;
   --fs-p: 13px;
   --fs-small: 10px;
   --fs-body: 1rem;
-  --w: 568px;
+  --h: 568px;
+  --h-education-page: 350px;
+  --h-contact-page: 350px;
   --pt-title: 30px;
-  --pt-text-img: 20px;
-}
-
-.section-contact-me,
-.section-experience,
-.section-resume {
-  min-height: var(--w);
+  --pt-text-img: 10px;
+  --pb-page: 50px;
 }
 
 /* ! CONFIG-HEADER---------------------- */
@@ -33,7 +30,6 @@
 
   body {
     margin: 0;
-    font-weight: var(--fw-regular);
     font-family: var(--ff-primary);
     font-size: var(--fs-h1)
   }
@@ -41,10 +37,6 @@
   .my-header {
     display: flex;
     flex-grow: 1;
-  }
-
-  .my-main {
-    /* padding-top: 100px; */
   }
 
   header::after {
@@ -138,19 +130,45 @@
     background-image: url(/images/assets/background.jpg);
     background-repeat: no-repeat;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     text-align: center;
     /* background-size: 100vw; */
+    padding-bottom: var(--pb-page);
   }
   
-  .section-intro > p {
+  .section-intro > div {
     margin: auto;
   }
 
+  .section-intro > div > p:first-child {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw);
+    margin: 0 0 10px 0;
+  }
+
+  .section-intro > div > p:nth-child(2) {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw);
+    color: grey;
+    margin: 0;
+  }
+
+  .section-intro > div > p:last-child {
+    font-size: var(--fs-h4);
+    font-style: italic;
+    color: grey;
+    padding: 0 10px;
+  }
+
+  .section-intro > div > p:last-child > i {
+    font-size: 12px !important;
+  }
+
+
 /* ! PROFILE---------------------------- */
   .section-about-me {
-    min-height: var(--w);
+    min-height: var(--h);
+    padding-bottom: var(--pb-page);
   }
 
   .profile {
@@ -159,6 +177,10 @@
     align-items: center;
     text-align: center;
     padding-top: var(--pt-title);
+  }
+
+  .profile > p:first-child {
+    font-size: var(--fs-h1);
   }
 
   .profile-msg {
@@ -174,12 +196,15 @@
 
 /* ! SKILLS----------------------------- */
   .section-skills {
-    min-height: var(--w);
+    min-height: var(--h);
     text-align: center;
+    padding-bottom: var(--pb-page);
   }
 
-  .skills {
+  .skills > p:first-child {
+    font-size: var(--fs-h1);
     padding-top: var(--pt-title);
+    margin-bottom: 0;
   }
 
   .languages {
@@ -200,7 +225,7 @@
   }
 
   .language-icon {
-    font-size: 3rem
+    font-size: 2.5rem
   }
 
   div .icons-skills > p {
@@ -210,24 +235,19 @@
 
 /* ! PROJECTS--------------------------- */
   .section-projects {
-    min-height: var(--w);
+    min-height: var(--h);
     text-align: center;
+    padding-bottom: var(--pb-page);
   }
 
-  .my-projects {
+  .projects > p:first-child {
+    font-size: var(--fs-h1);
     padding-top: var(--pt-title);
-  }
-  .my-projects {
-    padding-top: var(--pt-title);
-  }
-
-  .project {
-
   }
 
   .project > p:first-child {
     text-align: left;
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw);
   }
 
   .project > p:nth-child(3) {
@@ -246,6 +266,10 @@
     justify-content: center;
   }
 
+  .project-little-imgs {
+    height: 13px;
+  }
+
   .project-little-icons > div {
     margin-left: 5px;
   }
@@ -261,7 +285,137 @@
     color: blue;
   }
 
-  @media(min-width:390px) {
+/* ! EXPERIENCE------------------------- */
+  .section-experience {
+    min-height: var(--h);
+    text-align: center;
+  }
+
+  .experiences > p:first-child {
+    font-size: var(--fs-h1);
+    padding-top: var(--pt-title);
+  }
+
+  .company {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+  }
+
+  .company > p:first-child {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw);
+    padding-top: var(--pt-text-img)
+  }
+
+  .company > p:nth-child(2) {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw);
+  }
+  
+  .company > p:nth-child(3) {
+    font-size: var(--fs-small);
+  }
+  .company > p:nth-child(4) {
+    font-size: var(--fs-small);
+    font-weight: var(--fw);
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .company > ul > li {
+    font-size: var(--fs-small);
+    text-align: left;
+    padding-left: 20px;
+    list-style-type: circle;
+  }
+
+  .link-icon {
+    font-size: 17px;
+  }
+
+/* ! EDUCATION-------------------------- */
+  .section-education {
+    min-height: var(--h-education-page);
+    text-align: center;
+    padding-bottom: var(--pb-page);
+  }
+
+  .education {
+    /* border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px; */
+  }
+
+  .education > p:first-child {
+    font-size: var(--fs-h1);
+    padding-top: var(--pt-title);
+    margin-bottom: 0;
+  }
+
+  .institution > img {
+    width: 55px;
+    padding-top: var(--pt-title);
+  }
+
+  .institution > p:nth-child(2) {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw);
+    padding-top: var(--pt-text-img);
+    margin: 0;
+  }
+
+  .institution > p:nth-child(3) {
+    font-size: var(--fs-h);
+    font-size: var(--fs-h4);
+    margin: 0;
+  }
+
+  .institution > p:nth-child(4) {
+    font-size: var(--fs-h);
+    font-size: var(--fs-h4);
+    margin: 0;
+  }
+
+/* ! CONTACT---------------------------- */
+  .section-contact-me {
+    min-height: var(--h-contact-page);
+    text-align: center;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact > p:first-child {
+    font-size: var(--fs-h1);
+    padding-top: var(--pt-title);
+    margin-bottom: 0;
+  }
+
+  .my-form div {
+    max-width: 500px;
+    margin: auto;
+    padding-top: var(--pt-title)
+  }
+  .my-form input {
+    margin-bottom: 10px;
+  }
+
+  .my-form input, .my-form textarea {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+  }
+  
+  .my-form > div:last-child {
+    text-align: right;
+  }
+
+  input.button-submit {
+    width: 100px;
+  }
+
+@media(min-width:414px) {
   :root {
     --fs-h1: 2.6rem;
     --fs-h2: 1.5rem;
@@ -270,7 +424,7 @@
   }
 }
 
-@media(min-width:800px) {
+@media(min-width:768px) {
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;

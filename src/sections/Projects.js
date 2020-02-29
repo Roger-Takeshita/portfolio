@@ -5,7 +5,7 @@ const Projects = (props) => {
     return (
         <section className="section-projects container" id="menu-projects">
             <div className="projects">
-                <h3>Projects</h3>
+                <p> MY PROJECTS</p>
                 <div className="my-projects">
                     {projectsData.map((project, idx) => {
                         return (
@@ -21,8 +21,15 @@ const Projects = (props) => {
                                             </div>
                                         )
                                     })}
+                                    {project.internalTechnologies.length > 0 && project.internalTechnologies.map((technologyPath, iconIdx) => {
+                                        return (
+                                            <div key={iconIdx}>
+                                                <img src={technologyPath} className="project-little-imgs" alt="icon"/>
+                                            </div>
+                                        )
+                                    })}
                                 </div>
-                                <a href={project.repo} target="blank" className="link-code"><i class="small material-icons">code</i>Repo</a>
+                                <a href={project.repo} target="blank" className="link-code"><i className="small material-icons">code</i>Repo</a>
                             </div>
                         )
                     })}
