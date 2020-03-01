@@ -4,23 +4,17 @@
   "private": true,
   "homepage": "https://roger-takeshita.github.io",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.1",
-    "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
-    "css-scroll-snap-polyfill": "^0.1.2",
-    "emailjs": "^2.2.0",
-    "js-cookie": "^2.2.1",
+    "dotenv": "^8.2.0",
+    "emailjs-com": "^2.4.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
+    "react-icons": "^3.9.0",
     "react-scripts": "3.4.0",
     "react-scrollspy": "^3.4.2",
     "react-spring": "^8.0.27",
-    "react-swipe": "^6.0.4",
-    "smoothscroll-polyfill": "^0.4.4",
-    "swipe-js-iso": "^2.1.5",
-    "ua-parser-js": "^0.7.21"
+    "react-swipe": "^6.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

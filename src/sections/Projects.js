@@ -5,7 +5,7 @@ const Projects = (props) => {
     return (
         <section className="section-projects container" id="menu-projects">
             <div className="projects">
-                <p> MY PROJECTS</p>
+                <p> My Projects</p>
                 <div className="my-projects">
                     {projectsData.map((project, idx) => {
                         return (

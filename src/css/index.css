@@ -185,13 +185,13 @@
 
   .profile-msg {
     padding-top: 30px;
-    font-size: var(--ts);
+    font-size: var(--fs-h4);
   }
 
   #profile-pic {
     width: 50vw;
     border-radius: 50%;
-    padding-top: var(--pt-text-img);
+    padding-top: var(--pt-title);
   }
 
 /* ! SKILLS----------------------------- */
@@ -354,7 +354,7 @@
     margin-bottom: 0;
   }
 
-  .institution > img {
+  .institution > a > img {
     width: 55px;
     padding-top: var(--pt-title);
   }
@@ -385,6 +385,7 @@
     background-color: lightgrey;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
   }
 
   .contact > p:first-child {
@@ -400,6 +401,7 @@
   }
   .my-form input {
     margin-bottom: 10px;
+    font-size: var(--fs-h4);
   }
 
   .my-form input, .my-form textarea {
@@ -413,6 +415,57 @@
 
   input.button-submit {
     width: 100px;
+  }
+  
+  .resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume > a {
+    text-decoration: none !important;
+    color: rgb(0, 128, 255) !important;
+  }
+
+  .resume > a:hover {
+    color: rgb(0, 77, 153) !important;
+  }
+
+  div.resume > p {
+    margin: 0;
+    font-weight: var(--fw);
+  }
+
+  .external-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .external-links > p:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: var(--fs-h4);
+    color: grey;
+  }
+
+  .social-media {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+  }
+
+  .social-media > a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  .social-media > a:hover {
+    color: black;
+  }
+
+  .social-media > svg {
+    justify-content: space-between;
   }
 
 @media(min-width:414px) {
