@@ -1,12 +1,13 @@
 {
-  "name": "roger-takeshita.github.io",
+  "name": "Roger Takeshita's Portifolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://roger-takeshita.github.io",
+  "homepage": "https://roger-takeshita.github.io/portifolio",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "emailjs-com": "^2.4.1",
+    "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
