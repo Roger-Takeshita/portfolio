@@ -1,11 +1,12 @@
 import React from 'react';
 import { languagesData } from '../data/languagesData';
 import { Parallax } from "react-parallax";
+import bgTwo from '../images/assets/background_002.png';
 
 const Skills = (props) => {
     return (
         <div className="section-skills" id="menu-skills" sytle={{backgroundColor: 'grey'}}>
-                <Parallax bgImage={'/images/assets/background_002.png'} strength={500} >
+                <Parallax bgImage={bgTwo} strength={500} >
                     <div className="skills container">
                         <p>Skills</p>
                         <div style={{ height: 500 }} className="languages">

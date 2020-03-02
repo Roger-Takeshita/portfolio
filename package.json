@@ -1,11 +1,13 @@
 {
-  "name": "Roger Takeshita's Portifolio",
+  "homepage": ".",
+  "name": "portifolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://roger-takeshita.github.io/portifolio",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.1",
+    "@testing-library/user-event": "^10.0.0",
     "bootstrap": "^4.4.1",
-    "dotenv": "^8.2.0",
     "emailjs-com": "^2.4.1",
     "gh-pages": "^2.2.0",
     "react": "^16.12.0",

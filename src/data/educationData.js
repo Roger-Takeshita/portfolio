@@ -1,3 +1,6 @@
+import gaLogo from '../images/logos/education_ga.png';
+import pucLogo from '../images/logos/education_puc.png';
+
 export const educationData = [
     {
         name: 'General Assembly (Previous Bitmaker Lab)',
@@ -5,7 +8,7 @@ export const educationData = [
         date: 'Ago 2019 - Feb 2020',
         location: 'Tornto-ON',
         url: 'https://generalassemb.ly/education/software-engineering-immersive/toronto',
-        logo:'/images/logos/education_ga.png',
+        logo: gaLogo,
         briefDescription: '',
     },
     {
@@ -14,7 +17,7 @@ export const educationData = [
         date: 'Jan 2005 - Jan 2011',
         location: 'Brazil',
         url: 'https://www.pucpr.br/cursos-graduacao/engenharia-mecatronica/',
-        logo:'/images/logos/education_puc.png',
+        logo: pucLogo,
         briefDescription: '',
     }
 ]

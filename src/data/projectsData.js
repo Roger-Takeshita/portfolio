@@ -1,7 +1,14 @@
+import pennyImg from '../images/projects/004-penny-pinchers.jpg';
+import fellasImg from '../images/projects/003-bookfellas.jpg';
+import icheatsImg from '../images/projects/002-icheats.jpg';
+import minesweeperImg from '../images/projects/001-minesweeper.jpg';
+import socketIoLogo from '../images/logos/technology_socketio.png';
+
+
 export const projectsData = [
     {
         name: "Penny Pinchers",
-        image: "/images/projects/004-penny-pinchers.jpg",
+        image: pennyImg,
         url: "https://penny-pinchers.herokuapp.com/",
         repo: "https://github.com/Roger-Takeshita/Penny-Pinchers",
         technologies: [
@@ -21,7 +28,7 @@ export const projectsData = [
     },
     {
         name: "Bookfellas",
-        image: "/images/projects/003-bookfellas.jpg",
+        image: fellasImg,
         url: "https://bookfellas.herokuapp.com/",
         repo: "https://github.com/BookFellas/book-fellas",
         technologies: [
@@ -39,7 +46,7 @@ export const projectsData = [
     },
     {
         name: "iCheats",
-        image: "/images/projects/002-icheats.jpg",
+        image: icheatsImg,
         url: "https://icheats.herokuapp.com/",
         repo: "https://github.com/Roger-Takeshita/iCheats",
         technologies: [
@@ -54,13 +61,13 @@ export const projectsData = [
             'devicon-heroku-original-wordmark'
         ],
         internalTechnologies: [
-            '/images/logos/technology_socketio.png'
+            socketIoLogo
         ],
         description: "Full-Stack social media application built with:",
     },
     {
         name: "Minesweeper",
-        image: "/images/projects/001-minesweeper.jpg",
+        image: minesweeperImg,
         url: "https://roger-takeshita.github.io/game-minesweeper/",
         repo: "https://github.com/Roger-Takeshita/game-minesweeper",
         technologies: [
@@ -94,3 +101,4 @@ export const projectsData = [
 // <i className="devicon-amazonwebservices-plain-wordmark-wordmark colored"/>
 // <i className="devicon-photoshop-plain-wordmark colored"/>
 // <i className="devicon-visualstudio-plain-wordmark colored"/>
+// image: process.env.PUBLIC_URL + "/images/projects/002-icheats.jpg",

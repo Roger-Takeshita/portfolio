@@ -132,7 +132,7 @@
   .section-intro {
     width: 100vw;
     height: var(--h-about-page);
-    background-image: url(/images/assets/background_001.jpg);
+    background-image: url(../images/assets/background_001.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -432,6 +432,7 @@
   .my-form input, .my-form textarea {
     width: -webkit-fill-available;
     border-radius: 5px;
+    font-size: var(--fs-h4);
     border: none;
   }
   
@@ -534,9 +535,9 @@
   }
 
 /* ! INTRO------------------------------ */
-.section-intro {
-  height: 100vh !important;
-}
+  .section-intro {
+    height: 100vh !important;
+  }
 
 /* ! PROFILE---------------------------- */
   .section-about-me {
