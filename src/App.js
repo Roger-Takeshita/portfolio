@@ -2,7 +2,7 @@ import React from 'react';
 import './css/App.css';
 import Intro from './sections/Intro';
 import AboutMe from './sections/AboutMe';
-import Experience from './sections/Experience';
+// import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Education from './sections/Education';
 import Skills from './sections/Skills';

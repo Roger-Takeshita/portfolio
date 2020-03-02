@@ -3,8 +3,8 @@ import { projectsData } from '../data/projectsData';
 
 const Projects = (props) => {
     return (
-        <section className="section-projects container" id="menu-projects">
-            <div className="projects">
+        <section className="section-projects" id="menu-projects">
+            <div className="projects container">
                 <p> My Projects</p>
                 <div className="my-projects">
                     {projectsData.map((project, idx) => {
@@ -29,7 +29,10 @@ const Projects = (props) => {
                                         )
                                     })}
                                 </div>
-                                <a href={project.repo} target="blank" className="link-code"><i className="small material-icons">code</i>Repo</a>
+                                <div className="repo">
+                                    <i className="material-icons">code</i>
+                                    <a href={project.repo} target="blank" className="link-code">Repo</a>
+                                </div>
                             </div>
                         )
                     })}

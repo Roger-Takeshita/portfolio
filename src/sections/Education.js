@@ -3,8 +3,8 @@ import { educationData } from '../data/educationData';
 
 const Resume = (props) => {
     return (
-        <section className="section-education container" id="menu-education">
-            <div className="education">
+        <section className="section-education" id="menu-education">
+            <div className="education container">
                 <p>Education</p>
                 { educationData.map((institution, idx) => {
                     return (

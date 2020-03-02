@@ -61,8 +61,8 @@ export const languagesData = [
         name: "AWS S3",
         icon: <i className="devicon-amazonwebservices-original colored language-icon"/>
     },
-    {
-        name: "Photoshop",
-        icon: <i className="devicon-photoshop-plain colored language-icon"/>
-    }
+    // {
+    //     name: "Photoshop",
+    //     icon: <i className="devicon-photoshop-plain colored language-icon"/>
+    // }
 ]

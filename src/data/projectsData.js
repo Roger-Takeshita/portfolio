@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const projectsData = [
     {
         name: "Penny Pinchers",
@@ -7,15 +5,15 @@ export const projectsData = [
         url: "https://penny-pinchers.herokuapp.com/",
         repo: "https://github.com/Roger-Takeshita/Penny-Pinchers",
         technologies: [
-            'devicon-html5-plain-wordmark colored',
-            'devicon-css3-plain-wordmark colored',
-            'devicon-bootstrap-plain-wordmark colored',
-            'devicon-javascript-plain-wordmark colored',
-            'devicon-react-original-wordmark colored',
-            'devicon-nodejs-plain-wordmark colored', 
-            'devicon-express-original-wordmark colored', 
-            'devicon-mongodb-plain-wordmark colored',
-            'devicon-heroku-original-wordmark colored'
+            'devicon-html5-plain-wordmark',
+            'devicon-css3-plain-wordmark',
+            'devicon-bootstrap-plain-wordmark',
+            'devicon-javascript-plain-wordmark',
+            'devicon-react-original-wordmark',
+            'devicon-nodejs-plain-wordmark', 
+            'devicon-express-original-wordmark', 
+            'devicon-mongodb-plain-wordmark',
+            'devicon-heroku-original-wordmark'
         ],
         internalTechnologies: [],
         description: "MERN stack expenses tracker app built with:",
@@ -27,14 +25,14 @@ export const projectsData = [
         url: "https://bookfellas.herokuapp.com/",
         repo: "https://github.com/BookFellas/book-fellas",
         technologies: [
-            'devicon-html5-plain-wordmark colored',
-            'devicon-css3-plain-wordmark colored',
-            'devicon-bootstrap-plain-wordmark colored',
-            'devicon-javascript-plain-wordmark colored',
-            'devicon-jquery-plain-wordmark colored',
-            'devicon-python-plain-wordmark colored',
-            'devicon-django-plain-wordmark colored',
-            'devicon-heroku-original-wordmark colored'
+            'devicon-html5-plain-wordmark',
+            'devicon-css3-plain-wordmark',
+            'devicon-bootstrap-plain-wordmark',
+            'devicon-javascript-plain-wordmark',
+            'devicon-jquery-plain-wordmark',
+            'devicon-python-plain-wordmark',
+            'devicon-django-plain-wordmark',
+            'devicon-heroku-original-wordmark'
         ],
         internalTechnologies: [],
         description: "Full-Stack book store application built with:",
@@ -45,15 +43,15 @@ export const projectsData = [
         url: "https://icheats.herokuapp.com/",
         repo: "https://github.com/Roger-Takeshita/iCheats",
         technologies: [
-            'devicon-html5-plain-wordmark colored',
-            'devicon-css3-plain-wordmark colored',
-            'devicon-bootstrap-plain-wordmark colored',
-            'devicon-javascript-plain-wordmark colored',
-            'devicon-jquery-plain-wordmark colored',
-            'devicon-nodejs-plain-wordmark colored', 
-            'devicon-express-original-wordmark colored', 
-            'devicon-mongodb-plain-wordmark colored',
-            'devicon-heroku-original-wordmark colored'
+            'devicon-html5-plain-wordmark',
+            'devicon-css3-plain-wordmark',
+            'devicon-bootstrap-plain-wordmark',
+            'devicon-javascript-plain-wordmark',
+            'devicon-jquery-plain-wordmark',
+            'devicon-nodejs-plain-wordmark', 
+            'devicon-express-original-wordmark', 
+            'devicon-mongodb-plain-wordmark',
+            'devicon-heroku-original-wordmark'
         ],
         internalTechnologies: [
             '/images/logos/technology_socketio.png'
@@ -66,11 +64,11 @@ export const projectsData = [
         url: "https://roger-takeshita.github.io/game-minesweeper/",
         repo: "https://github.com/Roger-Takeshita/game-minesweeper",
         technologies: [
-            'devicon-html5-plain-wordmark colored', 
-            'devicon-css3-plain-wordmark colored', 
-            'devicon-javascript-plain-wordmark colored', 
-            'devicon-jquery-plain-wordmark colored',
-            'devicon-github-plain-wordmark colored'
+            'devicon-html5-plain-wordmark', 
+            'devicon-css3-plain-wordmark', 
+            'devicon-javascript-plain-wordmark', 
+            'devicon-jquery-plain-wordmark',
+            'devicon-github-plain-wordmark'
         ],
         internalTechnologies: [],
         description: "Single Page Application (SPA) built with:",

@@ -48,8 +48,8 @@ const ContactMe = props => {
     }
 
     return (
-        <section className="section-contact-me container" id="menu-contact-me">
-            <div className="contact">
+        <section className="section-contact-me" id="menu-contact-me">
+            <div className="contact container">
                 <p>Let's get in touch!</p>
                 <form onSubmit={handleSubmit} className="my-form">
                     <div>

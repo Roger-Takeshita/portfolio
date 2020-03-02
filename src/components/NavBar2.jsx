@@ -5,18 +5,18 @@ import Scrollspy from 'react-scrollspy';
 
 const NavBar2 = (props) => {
 
-    const effect = useSpring({
-        from: {
-            opacity: 0
-        },
-        to: {
-            opacity: 1
-        },
-        config: {
-            duration: 5000,
-            clamp: true
-        }
-    })
+    // const effect = useSpring({
+    //     from: {
+    //         opacity: 0
+    //     },
+    //     to: {
+    //         opacity: 1
+    //     },
+    //     config: {
+    //         duration: 5000,
+    //         clamp: true
+    //     }
+    // })
 
     const effectMenu = useSpring({
         from: {

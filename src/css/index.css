@@ -16,7 +16,9 @@
   --fs-small: 10px;
   --fs-body: 1rem;
   --h: 568px;
+  --h-about-page: 568px;
   --h-education-page: 350px;
+  --h-skill-page: 568px;
   --h-contact-page: 350px;
   --pt-title: 30px;
   --pt-text-img: 10px;
@@ -76,7 +78,10 @@
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
-    margin-left: 10px;
+
+  }
+  .scrollspy-menu > li > a:first-child {
+    margin-left: 0;
   }
 
   .scrollspy-menu > li > a:hover {
@@ -89,7 +94,7 @@
     display: block;
     height: 5px;
     width: 85%;
-    background-color: rgb(93, 174, 255, 0.3);
+    background-color: rgb(0, 128, 255, 0.5);
     position: absolute;
     top: 0;
     width: 0%;
@@ -126,13 +131,14 @@
 /* ! INTRO------------------------------ */
   .section-intro {
     width: 100vw;
-    height: 568px;
-    background-image: url(/images/assets/background.jpg);
+    height: var(--h-about-page);
+    background-image: url(/images/assets/background_001.jpg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
-    /* background-size: 100vw; */
     padding-bottom: var(--pb-page);
   }
   
@@ -147,16 +153,16 @@
   }
 
   .section-intro > div > p:nth-child(2) {
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
     font-weight: var(--fw);
-    color: grey;
+    color: rgb(0, 159, 255);
     margin: 0;
   }
 
   .section-intro > div > p:last-child {
     font-size: var(--fs-h4);
     font-style: italic;
-    color: grey;
+    color: white;
     padding: 0 10px;
   }
 
@@ -164,10 +170,9 @@
     font-size: 12px !important;
   }
 
-
 /* ! PROFILE---------------------------- */
   .section-about-me {
-    min-height: var(--h);
+    min-height: var(--h-about-page);
     padding-bottom: var(--pb-page);
   }
 
@@ -189,16 +194,15 @@
   }
 
   #profile-pic {
-    width: 50vw;
+    width: 100px;
     border-radius: 50%;
     padding-top: var(--pt-title);
   }
 
 /* ! SKILLS----------------------------- */
   .section-skills {
-    min-height: var(--h);
+    min-height: var(--h-skill-page);
     text-align: center;
-    padding-bottom: var(--pb-page);
   }
 
   .skills > p:first-child {
@@ -238,6 +242,7 @@
     min-height: var(--h);
     text-align: center;
     padding-bottom: var(--pb-page);
+    background-color: lightgrey;
   }
 
   .projects > p:first-child {
@@ -256,8 +261,13 @@
   }
 
   .project-img {
-    width: 100%;
+    width: 90%;
+    transition: transform .25s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .project-img:hover {
+    transform: scale(1.05);
   }
 
   .project-little-icons {
@@ -266,12 +276,25 @@
     justify-content: center;
   }
 
-  .project-little-imgs {
+  .project-little-icons > div {
+    margin-left: 5px;
+  }
+
+  .project-little-icons > div > i,
+  .project-little-icons > div > img {
+    font-size: 13px;
     height: 13px;
   }
 
-  .project-little-icons > div {
-    margin-left: 5px;
+  .repo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .repo > i {
+    font-size: 25px;
   }
 
   .link-code {
@@ -282,8 +305,10 @@
 
   .link-code:hover {
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 128, 255);
   }
+
+
 
 /* ! EXPERIENCE------------------------- */
   .section-experience {
@@ -407,6 +432,7 @@
   .my-form input, .my-form textarea {
     width: -webkit-fill-available;
     border-radius: 5px;
+    border: none;
   }
   
   .my-form > div:last-child {
@@ -470,18 +496,139 @@
 
 @media(min-width:414px) {
   :root {
-    --fs-h1: 2.6rem;
-    --fs-h2: 1.5rem;
-    --fs-h3: 0.9rem;
-    --fs-body: 0.75rem;
+    --ts: 18px;
+    --fs-h1: 1.75rem;
+    --fs-h2: 1.30rem;
+    --fs-h3: 1.15rem;
+    --fs-h4: 0.90rem;
+    --fs-p: 13px;
+    --fs-small: 10px;
+    --fs-body: 1rem;
+    --h: 100vh;
+    --h-about-page: 500px;
+    --h-education-page: 350px;
+    --h-contact-page: 350px;
+    --pt-title: 30px;
+    --pt-text-img: 10px;
+    --pb-page: 50px;
   }
 }
 
 @media(min-width:768px) {
   :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
-    --fs-h3: 1.55rem;
-    --fs-body: 1.125rem;
+    --ts: 18px;
+    --fs-h1: 2.50rem;
+    --fs-h2: 1.70rem;
+    --fs-h3: 1.50rem;
+    --fs-h4: 1.20rem;
+    --fs-p: 19px;
+    --fs-small: 10px;
+    --fs-body: 1rem;
+    --h: 100vh;
+    --h-education-page: 350px;
+    --h-skill-page: 500px;
+    --h-contact-page: 350px;
+    --pt-title: 70px;
+    --pt-text-img: 25px;
+    --pb-page: 70px;
+  }
+
+/* ! INTRO------------------------------ */
+.section-intro {
+  height: 100vh !important;
+}
+
+/* ! PROFILE---------------------------- */
+  .section-about-me {
+    min-height: var(--h-about-page);
+  }
+
+  .profile-msg {
+    padding: 50px 150px 0 150px;
+  }
+
+  #profile-pic {
+    width: 250px;
+    border-radius: 50%;
+  }
+
+/* ! SKILLS----------------------------- */
+  .section-skills {
+    min-height: var(--h);
+  }
+
+  .languages {
+    padding: 40px
+  }
+
+  .icons-skills {
+    width: 180px;
+    padding: 20px 0;
+  }
+
+  .language-icon {
+    font-size: 2.5rem
+  }
+
+/* ! PROJECTS--------------------------- */
+  .section-projects {
+    min-height: var(--h);
+  }
+
+  .my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    margin: 5px;
+  }
+
+  .project > a > img {
+    width: 350px;
+  }
+
+  .project > p:first-child {
+    font-size: var(--fs-h3);
+    text-align: center;
+  }
+
+  .project > p:nth-child(3) {
+    padding-top: 20px;
+  }
+
+  .project-img {
+    width: 50%;
+  }
+
+  .project-little-icons > div {
+    margin-left: 15px;
+  }
+
+  .project-little-icons > div > i, .project-little-icons > div > img {
+    font-size: 30px;
+    height: 30px;
+  }
+
+  .link-code {
+    font-size: var(--fs-h4);
+  }
+
+  .link-code > i {
+    font-size: 20px;
+  }
+
+/* ! EDUCATION-------------------------- */
+  .section-skills {
+    min-height: var(--h-skill-page);
+  }
+
+  .institution > a > img {
+    width: 80px;
   }
 }
