@@ -9,7 +9,7 @@ const Skills = (props) => {
                 <Parallax bgImage={bgTwo} strength={500} >
                     <div className="skills container">
                         <p>Skills</p>
-                        <div style={{ height: 500 }} className="languages">
+                        <div className="languages">
                             {languagesData.map((language, idx) => {
                                 return (
                                     <div key={idx} className="icons-skills">

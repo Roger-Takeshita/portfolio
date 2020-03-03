@@ -12,7 +12,8 @@
   --fs-h2: 1.30rem;
   --fs-h3: 1.15rem;
   --fs-h4: 0.90rem;
-  --fs-p: 13px;
+  --fs-p: 20px;
+  --fs-navbar: 15px;
   --fs-small: 10px;
   --fs-body: 1rem;
   --h: 568px;
@@ -23,6 +24,7 @@
   --pt-title: 30px;
   --pt-text-img: 10px;
   --pb-page: 50px;
+  --mb-page: 30px;
 }
 
 /* ! CONFIG-HEADER---------------------- */
@@ -78,8 +80,9 @@
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
-
+    font-size: var(--fs-navbar);
   }
+
   .scrollspy-menu > li > a:first-child {
     margin-left: 0;
   }
@@ -131,7 +134,7 @@
 /* ! INTRO------------------------------ */
   .section-intro {
     width: 100vw;
-    height: var(--h-about-page);
+    height: 100vh !important;
     background-image: url(../images/assets/background_001.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -189,8 +192,8 @@
   }
 
   .profile-msg {
-    padding-top: 30px;
-    font-size: var(--fs-h4);
+    padding: 30px 30px 0 30px;
+    font-size: var(--fs-p);
   }
 
   #profile-pic {
@@ -218,10 +221,12 @@
     align-items: center;
     justify-content: center;
     padding-top: var(--pt-text-img);
+    margin-bottom: var(--mb-page);
+    min-height: 500px;
   }
 
   .icons-skills {
-    width: 80px;
+    width: 110px;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -245,6 +250,12 @@
     background-color: lightgrey;
   }
 
+  .my-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .projects > p:first-child {
     font-size: var(--fs-h1);
     padding-top: var(--pt-title);
@@ -252,6 +263,7 @@
 
   .project > p:first-child {
     text-align: left;
+    font-size: var(--fs-h3);
     font-weight: var(--fw);
   }
 
@@ -261,7 +273,7 @@
   }
 
   .project-img {
-    width: 90%;
+    width: 80%;
     transition: transform .25s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -282,8 +294,8 @@
 
   .project-little-icons > div > i,
   .project-little-icons > div > img {
-    font-size: 13px;
-    height: 13px;
+    font-size: 25px;
+    height: 25px;
   }
 
   .repo {
@@ -307,8 +319,6 @@
     text-decoration: none;
     color: rgb(0, 128, 255);
   }
-
-
 
 /* ! EXPERIENCE------------------------- */
   .section-experience {
@@ -432,7 +442,7 @@
   .my-form input, .my-form textarea {
     width: -webkit-fill-available;
     border-radius: 5px;
-    font-size: var(--fs-h4);
+    font-size: var(--fs-h3);
     border: none;
   }
   
@@ -448,6 +458,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: var(--fs-h4);
   }
 
   .resume > a {
@@ -495,27 +506,56 @@
     justify-content: space-between;
   }
 
-@media(min-width:414px) {
+@media(min-width:600px) {
   :root {
     --ts: 18px;
-    --fs-h1: 1.75rem;
-    --fs-h2: 1.30rem;
-    --fs-h3: 1.15rem;
-    --fs-h4: 0.90rem;
-    --fs-p: 13px;
+    --fs-h1: 2.50rem;
+    --fs-h2: 1.70rem;
+    --fs-h3: 1.50rem;
+    --fs-h4: 1.20rem;
+    --fs-p: 18px;
+    --fs-navbar: 20px;
     --fs-small: 10px;
     --fs-body: 1rem;
     --h: 100vh;
-    --h-about-page: 500px;
     --h-education-page: 350px;
+    --h-skill-page: 30px;
     --h-contact-page: 350px;
-    --pt-title: 30px;
-    --pt-text-img: 10px;
-    --pb-page: 50px;
+    --pt-title: 70px;
+    --pt-text-img: 25px;
+    --pb-page: 70px;
+  }
+/* + PROFILE---------------------------- */
+  .section-about-me {
+    min-height: var(--h-about-page);
+  }
+
+  .profile-msg {
+    padding: 50px 50px 0 50px;
+    font-size: var(--fs-p);
+  }
+
+  #profile-pic {
+    width: 250px;
+    border-radius: 50%;
+  }
+
+/* + SKILLS----------------------------- */
+  .section-skills {
+    min-height: var(--h-skill-page);
+  }
+
+  .languages {
+    padding: var(--pt-text-img);
+    margin-bottom: var(--mb-page);
+  }
+
+  .icons-skills {
+    width: 100px;
   }
 }
 
-@media(min-width:768px) {
+@media(min-width:800px) {
   :root {
     --ts: 18px;
     --fs-h1: 2.50rem;
@@ -523,6 +563,7 @@
     --fs-h3: 1.50rem;
     --fs-h4: 1.20rem;
     --fs-p: 19px;
+    --fs-navbar: 20px;
     --fs-small: 10px;
     --fs-body: 1rem;
     --h: 100vh;
@@ -532,34 +573,41 @@
     --pt-title: 70px;
     --pt-text-img: 25px;
     --pb-page: 70px;
+    --mb-page: 50px;
   }
 
-/* ! INTRO------------------------------ */
+/* - INTRO------------------------------ */
   .section-intro {
-    height: 100vh !important;
+    /* height: 100vh !important; */
   }
 
-/* ! PROFILE---------------------------- */
+  .scrollspy-menu > li > a {
+    font-size: var(--fs-navbar);
+  }
+
+/* - PROFILE---------------------------- */
   .section-about-me {
     min-height: var(--h-about-page);
   }
 
   .profile-msg {
     padding: 50px 150px 0 150px;
+    font-size: var(--fs-p);
   }
 
   #profile-pic {
     width: 250px;
     border-radius: 50%;
   }
-
-/* ! SKILLS----------------------------- */
+  
+/* - SKILLS----------------------------- */
   .section-skills {
     min-height: var(--h);
   }
 
   .languages {
-    padding: 40px
+    padding: 40px;
+    margin-bottom: var(--mb-page);
   }
 
   .icons-skills {
@@ -571,27 +619,19 @@
     font-size: 2.5rem
   }
 
-/* ! PROJECTS--------------------------- */
+/* - PROJECTS--------------------------- */
   .section-projects {
     min-height: var(--h);
   }
 
-  .my-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
 
   .project {
-    width: 45%;
+    width: 100%;
     padding: 20px;
-    border: 1px solid lightgrey;
+    /* border: 1px solid grey;
     border-radius: 15px;
-    margin: 5px;
-  }
-
-  .project > a > img {
-    width: 350px;
+    margin: 5px; */
   }
 
   .project > p:first-child {
@@ -604,7 +644,7 @@
   }
 
   .project-img {
-    width: 50%;
+    width: 80%;
   }
 
   .project-little-icons > div {
@@ -624,12 +664,31 @@
     font-size: 20px;
   }
 
-/* ! EDUCATION-------------------------- */
+/* - EDUCATION-------------------------- */
   .section-skills {
     min-height: var(--h-skill-page);
   }
 
   .institution > a > img {
     width: 80px;
+  }
+/* - CONTACT---------------------------- */
+  .resume {
+    font-size: var(--fs-h4);
+  }
+}
+
+@media(min-width: 900px) {
+  .my-projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    margin: 5px;
   }
 }

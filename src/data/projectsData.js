@@ -18,7 +18,7 @@ export const projectsData = [
             'devicon-javascript-plain-wordmark',
             'devicon-react-original-wordmark',
             'devicon-nodejs-plain-wordmark', 
-            'devicon-express-original-wordmark', 
+            'devicon-express-original', 
             'devicon-mongodb-plain-wordmark',
             'devicon-heroku-original-wordmark'
         ],
@@ -56,7 +56,7 @@ export const projectsData = [
             'devicon-javascript-plain-wordmark',
             'devicon-jquery-plain-wordmark',
             'devicon-nodejs-plain-wordmark', 
-            'devicon-express-original-wordmark', 
+            'devicon-express-original', 
             'devicon-mongodb-plain-wordmark',
             'devicon-heroku-original-wordmark'
         ],
@@ -91,7 +91,7 @@ export const projectsData = [
 // <i className="devicon-jquery-plain-wordmark colored"/>
 // <i className="devicon-react-original-wordmark colored"/>
 // <i className="devicon-nodejs-plain-wordmark colored"/>
-// <i className="devicon-express-original-wordmark colored"/>
+// <i className="devicon-express-original colored"/>
 // <i className="devicon-python-plain-wordmark colored"/>
 // <i className="devicon-django-plain-wordmark colored"/>
 // <i className="devicon-mongodb-plain-wordmark colored"/>
