@@ -1,1 +1,1 @@
-# [Roger Takeshita's Portifolio (click here)](https://roger-takeshita.github.io/portifolio/)
+# [Roger Takeshita's Portfolio (click here)](https://roger-takeshita.github.io/portfolio)
