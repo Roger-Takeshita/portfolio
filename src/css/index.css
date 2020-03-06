@@ -52,6 +52,7 @@
   header > nav {
     flex-grow: 1;
     background-color: none;
+    backdrop-filter: blur(5px);
   }
 
   .active {
@@ -69,22 +70,23 @@
 
   .scrollspy-menu {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px !important;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
   }
 
-  .scrollspy-menu li {
-    list-style: none;
-  }
-
-  .scrollspy-menu > li > a {
-    color: black;
+  .scrollspy-menu > li {
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
     font-size: var(--fs-navbar);
-  }
-
-  .scrollspy-menu > li > a:first-child {
-    margin-left: 0;
+    /* font-weight: bolder; */
+    margin-left: 10px;
+    list-style: none;
+    white-space: nowrap;
   }
 
   .scrollspy-menu > li > a:hover {
@@ -506,6 +508,26 @@
     justify-content: space-between;
   }
 
+@media(min-width:700px) {
+  .scrollspy-menu {
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .scrollspy-menu > li {
+    margin-left: 10px;
+  }
+
+  .scrollspy-menu > li:first-child {
+    margin-left: 0;
+  }
+
+}
+
 @media(min-width:600px) {
   :root {
     --ts: 18px;
@@ -525,6 +547,7 @@
     --pt-text-img: 25px;
     --pb-page: 70px;
   }
+
 /* + PROFILE---------------------------- */
   .section-about-me {
     min-height: var(--h-about-page);
