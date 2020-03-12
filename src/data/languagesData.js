@@ -15,10 +15,10 @@ export const languagesData = [
         name: 'Bootstrap4',
         icon: <i className="devicon-bootstrap-plain colored language-icon" />
     },
-    // {
-    //     name: "Sass",
-    //     icon: <i className="devicon-sass-original colored language-icon"/>
-    // },
+    {
+        name: 'Sass',
+        icon: <i className="devicon-sass-original colored language-icon" />
+    },
     {
         name: 'JavaScript',
         icon: <i className="devicon-javascript-plain colored language-icon" />
