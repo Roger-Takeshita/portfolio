@@ -3,8 +3,8 @@ import profilePic from '../images/assets/profile_pic.jpeg';
 
 const AboutMe = (props) => {
     return (
-        <section className="section-about-me container" id="menu-about-me">
-            <div className="profile">
+        <section className="section-about-me" id="menu-about-me">
+            <div className="profile container">
                 <div>
                     <img src={profilePic} alt="profile" id="profile-pic" />
                 </div>
