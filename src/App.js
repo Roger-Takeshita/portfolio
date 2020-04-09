@@ -7,24 +7,28 @@ import Projects from './sections/Projects';
 import Education from './sections/Education';
 import Skills from './sections/Skills';
 import ContactMe from './sections/ContactMe';
-import NavBar from './components/NavBar2';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="my-header">
-        <NavBar />
-      </header>
-      <main className="my-main">
-        <Intro />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Education />
-        <ContactMe />
-      </main>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="my-header">
+                <NavBar />
+            </header>
+            <main className="my-main">
+                <Intro />
+                <AboutMe />
+                <Skills />
+                <Projects />
+                <Education />
+                <ContactMe />
+            </main>
+            <footer>
+                <Footer />
+            </footer>
+        </div>
+    );
 }
 
 export default App;

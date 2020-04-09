@@ -1,38 +1,32 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
-import { GoFilePdf } from "react-icons/go";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { TiSocialInstagram, TiSocialYoutube } from "react-icons/ti";
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { GoFilePdf } from 'react-icons/go';
+import { iconsSocialMedia } from '../data/iconsSocialMedia';
 
-const ContactMe = props => {
+const ContactMe = (props) => {
     const [message, setMessage] = useState({
         name: '',
         email: '',
         msg: ''
     });
 
-    let handleChange = e => {
+    let handleChange = ({ target: { name, value } }) => {
         setMessage({
             ...message,
-            [e.target.name]: [e.target.value]
+            [name]: [value]
         });
     };
 
-    let handleSubmit = async e => {
+    let handleSubmit = async (e) => {
         e.preventDefault();
         let data = {
             user_name: message.name,
             user_email: message.email,
             message_html: message.msg
         };
-        
+
         try {
-            await emailjs.send(
-                'default_service',
-                'emailjs_portifolio',
-                data,
-                'user_svVzdsNvPIpH9UZdGsjUw'
-            )
+            await emailjs.send('default_service', 'emailjs_portifolio', data, 'user_svVzdsNvPIpH9UZdGsjUw');
             setMessage({
                 name: '',
                 email: '',
@@ -44,7 +38,14 @@ const ContactMe = props => {
     };
 
     function isFormValid() {
-        return !(message.name.length > 0 && message.email.length > 0 && message.msg.length > 0 && message.name[0] !== '' && message.email[0] !== '' && message.msg[0] !== '')
+        return !(
+            message.name.length > 0 &&
+            message.email.length > 0 &&
+            message.msg.length > 0 &&
+            message.name[0] !== '' &&
+            message.email[0] !== '' &&
+            message.msg[0] !== ''
+        );
     }
 
     return (
@@ -94,30 +95,17 @@ const ContactMe = props => {
                     </div>
                     <p> Follow me at:</p>
                     <div className="social-media">
-                        <a
-                            href="https://github.com/Roger-Takeshita"
-                            target="blank"
-                        >
-                            <FaGithub size="1.7rem" />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/roger-takeshita/"
-                            target="blank"
-                        >
-                            <FaLinkedin size="1.7rem" />
-                        </a>
-                        <a
-                            href="https://www.instagram.com/roger.takeshita/"
-                            target="blank"
-                        >
-                            <TiSocialInstagram size="1.7rem" />
-                        </a>
-                        <a
-                            href="https://www.youtube.com/channel/UCTA3Kd4KxeD6GnZCfLZbYaA"
-                            target="blank"
-                        >
-                            <TiSocialYoutube size="1.7rem" />
-                        </a>
+                        {iconsSocialMedia.map((icon, idx) => {
+                            return (
+                                <a key={idx} href={icon.url} target="blank">
+                                    <img
+                                        src={icon.iconSvg}
+                                        alt="logo"
+                                        className="social-media__icon-social-media"
+                                    />
+                                </a>
+                            );
+                        })}
                     </div>
                 </div>
             </div>

@@ -55,6 +55,20 @@
     backdrop-filter: blur(5px);
   }
 
+  footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: lightgrey;
+    font-size: 14px;
+  }
+
+  footer > span {
+    font-family: 'Dancing Script', cursive;
+    
+  }
+
   .active {
     color: #7e7e7e !important;
   }
@@ -446,11 +460,12 @@
     padding-top: var(--pt-title)
   }
   .my-form input {
-    margin-bottom: 10px;
     font-size: var(--fs-h4);
   }
 
   .my-form input, .my-form textarea {
+    margin-bottom: 10px;
+    padding-left: 10px;
     width: -webkit-fill-available;
     border-radius: 5px;
     font-size: var(--fs-h3);
@@ -501,7 +516,9 @@
   .social-media {
     display: flex;
     width: 150px;
-    justify-content: space-between;
+    height: 50px;
+    justify-content: space-around;
+    margin: 15px auto;
   }
 
   .social-media > a {
@@ -513,8 +530,16 @@
     color: black;
   }
 
-  .social-media > svg {
-    justify-content: space-between;
+  .social-media > a > img {
+    height: 25px;
+    margin: 0 25px 10px 25px;
+    transition: transform .25s;
+    filter: grayscale(100%);
+  }
+
+  .social-media > a > img:hover {
+    filter: none;
+    transform: scale(2.20);
   }
 
 @media(min-width:700px) {

@@ -36,11 +36,11 @@ export const languagesData = [
         icon: <i className="devicon-express-original colored language-icon" />
     },
     {
-        name: 'React',
+        name: 'React.js',
         icon: <i className="devicon-react-original colored language-icon" />
     },
     {
-        name: 'Redux',
+        name: 'Redux.js',
         icon: <img src={reduxLogo} className="local-logo" alt="logo" />
     },
     {
@@ -65,9 +65,7 @@ export const languagesData = [
     },
     {
         name: 'AWS S3',
-        icon: (
-            <i className="devicon-amazonwebservices-original colored language-icon" />
-        )
+        icon: <i className="devicon-amazonwebservices-original colored language-icon" />
     }
     // {
     //     name: 'Photoshop',
