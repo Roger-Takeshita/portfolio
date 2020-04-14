@@ -249,6 +249,11 @@
     align-items: center;
   }
 
+  .icons-skills-local {
+    width: 40px;
+    height: 40px;
+  }
+
   .local-logo {
     width: 40px;
   }
@@ -670,10 +675,6 @@
   .icons-skills {
     width: 180px;
     padding: 20px 0;
-  }
-
-  .language-icon {
-    font-size: 2.5rem
   }
 
 /* - PROJECTS--------------------------- */

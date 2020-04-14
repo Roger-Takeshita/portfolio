@@ -12,11 +12,7 @@ const Projects = (props) => {
                             <div key={idx} className="project">
                                 <p>{project.name}</p>
                                 <a href={project.url} target="blank">
-                                    <img
-                                        src={project.image}
-                                        alt="project img"
-                                        className="project-img"
-                                    />
+                                    <img src={project.image} alt="project img" className="project-img" />
                                 </a>
                                 <p>{project.description}</p>
                                 <div className="project-little-icons">
@@ -26,11 +22,7 @@ const Projects = (props) => {
                                 </div>
                                 <div className="repo">
                                     <i className="material-icons">code</i>
-                                    <a
-                                        href={project.repo}
-                                        target="blank"
-                                        className="link-code"
-                                    >
+                                    <a href={project.repo} target="blank" className="link-code">
                                         Repo
                                     </a>
                                 </div>
