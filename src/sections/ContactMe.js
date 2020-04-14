@@ -53,35 +53,28 @@ const ContactMe = (props) => {
             <div className="contact container">
                 <p>Let's get in touch!</p>
                 <form onSubmit={handleSubmit} className="my-form">
-                    <div>
-                        <input
-                            name="name"
-                            onChange={handleChange}
-                            value={message.name}
-                            placeholder="Your Name"
-                        />
-                        <input
-                            name="email"
-                            type="email"
-                            onChange={handleChange}
-                            value={message.email}
-                            placeholder="Your Email"
-                        />
-                        <textarea
-                            name="msg"
-                            rows="4"
-                            onChange={handleChange}
-                            value={message.msg}
-                            placeholder="Your Message"
-                        />
-                        <input
-                            className="button-submit"
-                            type="submit"
-                            value="Submit"
-                            disabled={isFormValid()}
-                            onSubmit={handleSubmit}
-                        />
-                    </div>
+                    <input name="name" onChange={handleChange} value={message.name} placeholder="Your Name" />
+                    <input
+                        name="email"
+                        type="email"
+                        onChange={handleChange}
+                        value={message.email}
+                        placeholder="Your Email"
+                    />
+                    <textarea
+                        name="msg"
+                        rows="4"
+                        onChange={handleChange}
+                        value={message.msg}
+                        placeholder="Your Message"
+                    />
+                    <input
+                        className="button-submit"
+                        type="submit"
+                        value="Submit"
+                        disabled={isFormValid()}
+                        onSubmit={handleSubmit}
+                    />
                 </form>
                 <div className="external-links">
                     <div className="resume">
