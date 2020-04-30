@@ -2,6 +2,7 @@ import React from 'react';
 import reduxLogo from '../images/logos/languages/redux.svg';
 import pythonLogo from '../images/logos/languages/python.svg';
 import materialuiLogo from '../images/logos/languages/material-ui.svg';
+import jestLogo from '../images/logos/languages/jest.svg';
 
 export const languagesData = [
     {
@@ -9,7 +10,7 @@ export const languagesData = [
         icon: <i className="devicon-react-original colored language-icon" />
     },
     {
-        name: 'Redux.js',
+        name: 'Redux',
         icon: <img src={reduxLogo} className="local-logo" alt="logo" />
     },
     {
@@ -72,6 +73,10 @@ export const languagesData = [
     {
         name: 'AWS S3',
         icon: <i className="devicon-amazonwebservices-original colored language-icon" />
+    },
+    {
+        name: 'Jest',
+        icon: <img src={jestLogo} className="local-logo" alt="logo" />
     }
     // {
     //     name: 'Photoshop',

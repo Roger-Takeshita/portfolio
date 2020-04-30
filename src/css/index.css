@@ -407,11 +407,11 @@
     padding-bottom: var(--pb-page);
   }
 
-  .education {
-    /* border-radius: 5px;
+  /* .education {
+    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 5px; */
-  }
+    padding: 5px;
+  } */
 
   .education > p:first-child {
     font-size: var(--fs-h1);
@@ -642,9 +642,9 @@
   }
 
 /* - INTRO------------------------------ */
-  .section-intro {
-    /* height: 100vh !important; */
-  }
+  /* .section-intro {
+    height: 100vh !important;
+  } */
 
   .scrollspy-menu > li > a {
     font-size: var(--fs-navbar);
